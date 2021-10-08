@@ -3,6 +3,9 @@ import Hero from "./Hero"
 import Form from "./Form"
 import Plans from "./Plans"
 import Best from "./Best"
+import Search from "./Search"
+import Map from "./Map"
+import Footer from "./Footer"
 
 const Home = () => {
     return (
@@ -12,6 +15,9 @@ const Home = () => {
                 <Form />
                 <Plans />
                 <Best />
+                <Search />
+                <Map />
+                <Footer />
             </div>
         </div>
     )

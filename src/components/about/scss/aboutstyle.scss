@@ -1,0 +1,489 @@
+// 3about pages styling 
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+$primary-color: rgb(255, 89, 0);
+$primary-font: Montserrat;
+$secondary-font: Poppins;
+$text-color: #000;
+$back-color: #fff;
+// $secondary-color: #13593b;
+$secondary-color: hsla(154, 61%, 51%, 0.5);
+// $primary-color: #fff;
+
+
+
+//==============.about-container {===========
+
+.about-container {
+    width: 100%;
+    height: 300px;
+    padding: 0px;
+    position: relative;
+    background-color: #fff;
+    z-index: 3;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.653);
+    }
+
+    img {
+        width: 100%;
+        height: 300px;
+        margin: auto 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-content: center;
+        z-index: 4;
+        line-height: 1.5;
+    }
+}
+
+//==============.about-info {===========
+
+.about-info {
+    padding: 100px 100px;
+
+    h2 {
+        color: $primary-color;
+        font-size: 3rem;
+        text-align: left;
+
+    }
+
+    p {
+        padding-top: 20px;
+        font-size: 1.2rem;
+        line-height: 1.7;
+        font-weight: 600;
+    }
+}
+
+
+//==============.about-values {===========
+
+
+.about-values {
+    padding: 100px 100px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "val pur mis";
+    grid-gap: 20px;
+
+    h2 {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $primary-color;
+
+        span {
+            font-size: 2.5rem;
+            color: grey;
+        }
+    }
+
+    .val,
+    .pur,
+    .mission {
+        grid-area: val;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
+    .pur {
+        grid-area: pur
+    }
+
+    .mission {
+        grid-area: mis
+    }
+}
+
+//==============.leadership-page {===========
+
+.leadership-page {
+    padding: 50px 60px;
+    width: 100%;
+    min-height: 800px;
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    .leaders-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+        row-gap: 50px;
+        padding: 50px 5px;
+        place-items: center;
+        // width: 830px;
+        max-width: 90%;
+        margin: 0 auto;
+
+        .each-member {
+            // border: 2px solid grey;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, .5);
+            padding-bottom: 20px;
+            background-color: $primary-color;
+            border: 2px solid $primary-color;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+
+            // &:hover {
+            //     background-color: #fff;
+            //     border: 2px solid grey;
+            //     color: #000;
+            // }
+        }
+
+        img {
+            width: 270px;
+            height: 300px;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        h4,
+        p {
+            padding: 10px 0 0 20px;
+        }
+
+        .know {
+            display: block;
+            width: 80%;
+            height: 40px;
+            background-color: #fff;
+            color: #000;
+            border: none;
+            font-family: montserrat;
+            cursor: pointer;
+            margin: 0 auto;
+            // transition: all 0.3s ease-in-out;
+
+            &:hover {
+                // background-color: $primary-color;
+                border: 3px solid grey;
+                color: #000;
+            }
+        }
+    }
+}
+
+//============= hinduja group ===========
+
+.hinduja-container {
+    padding: 100px 60px;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    grid-template-areas: "hindu hindu""logo info";
+    grid-template-rows: 0.2fr 1fr;
+
+    h1 {
+        grid-area: hindu;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 62px;
+    }
+
+    .logo {
+        grid-area: logo;
+        display: grid;
+        place-content: center;
+
+        .group {
+            width: 200px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .info {
+        grid-area: info;
+        padding-left: 30px;
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+//==============.wifi-container {===========
+
+
+/* ============ parent ============= */
+
+.parent-wifi {
+    width: 100vw;
+    min-height: calc(100vh - 80px);
+    background-color: #fff;
+    // margin-top: 80px;
+    overflow-x: hidden;
+}
+
+.layout-container-wifi {
+    width: 100vw;
+    max-width: 1500px;
+    margin: 0px auto;
+    background-color: #fff;
+    // overflow-x: hidden;
+}
+
+.wifi-container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    // padding: 100px 60px;
+
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+
+    .sidebar {
+        background-color: $primary-color;
+        color: #fff;
+        font-weight: bold;
+        display: grid;
+        place-content: center;
+        padding: 50px;
+
+        h3 {
+            font-size: 3rem;
+            color: #fff;
+        }
+    }
+
+    .wifi-main {
+        padding: 50px;
+        overflow-y: auto;
+
+        .wifi-head {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-bottom: 20px;
+            place-items: center;
+
+            .head {
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: grey
+            }
+        }
+
+        .each-plan {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            // margin-bottom: 10px;
+            padding: 15px;
+            place-items: center;
+            border-bottom: 1px solid rgb(205, 205, 205);
+
+            .name,
+            .data,
+            .validity,
+            .buy {
+                font-size: 1.2rem;
+                font-weight: 600;
+
+            }
+
+            .data {}
+
+            .validity {}
+
+            .buy {
+                width: 150px;
+                height: 40px;
+                background-color: $primary-color;
+                color: #fff;
+                border: none;
+                font-family: montserrat;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #fff;
+                    border: 3px solid $primary-color;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+//=============Contact-container {===========
+
+
+/* ============ parent ============= */
+
+.parent-con {
+    width: 100vw;
+    min-height: calc(100vh - 80px);
+    background-color: #fff;
+    // margin-top: 80px;
+    overflow-x: hidden;
+}
+
+.layout-container-con {
+    width: 100vw;
+    max-width: 1500px;
+    margin: 0px auto;
+    background-color: #fff;
+    // overflow-x: hidden;
+}
+
+.contact-container {
+    width: 100%;
+    height: calc(100vh - 80px);
+    // padding: 100px 60px;
+
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+
+    .sidebar {
+        color: $primary-color;
+        background-color: #fff;
+        font-weight: bold;
+        display: grid;
+        place-content: center;
+        padding: 50px;
+
+        h3 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: $primary-color;
+            text-align: center;
+        }
+    }
+
+    .form {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+
+
+        input {
+            display: block;
+            width: 60%;
+            height: 60px;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            margin: 20px auto;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            outline: none;
+            font-family: montserrat;
+        }
+
+        textarea {
+            display: block;
+            outline: none;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            margin: 20px auto;
+            resize: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: montserrat;
+        }
+
+        button {
+            display: block;
+            width: 250px;
+            height: 60px;
+            margin: 20px auto;
+            background-color: $primary-color;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            border: none;
+            font-family: montserrat;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background-color: #fff;
+                border: 3px solid $primary-color;
+                color: #000;
+            }
+        }
+
+    }
+}
+
+
+
+.contact-values {
+    padding: 100px 100px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "val pur mis";
+    grid-gap: 20px;
+
+    h2 {
+        font-size: 5rem;
+        font-weight: bold;
+        color: $primary-color;
+        display: grid;
+        place-items: center;
+
+        span {
+            font-size: 2.5rem;
+            color: grey;
+        }
+    }
+
+    .val,
+    .pur,
+    .mission {
+        grid-area: val;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.5;
+        cursor: pointer;
+
+        p {
+            padding-top: 20px;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    .pur {
+        grid-area: pur
+    }
+
+    .mission {
+        grid-area: mis
+    }
+}
