@@ -15,11 +15,19 @@ const Footer = () => {
           </div>
           <div>
             <h4> Phone Number : </h4>
-            <p>+91 8237170617</p>
+            <p>+91 82374545450617</p>
           </div>
           <div>
             <h4> Email Address : </h4>
-            <p>chinmay@surve</p>
+            <p>onebrand@</p>
+          </div>
+          <div>
+            <h4> Find Us On : </h4>
+            <p>
+            <i class="fa fa-instagram insta" aria-hidden="true"></i>
+            <i class="fa fa-facebook-official face" aria-hidden="true"></i>
+            <i class="fa fa-linkedin link" aria-hidden="true"></i>
+            </p>
           </div>
         </div>
       </div>

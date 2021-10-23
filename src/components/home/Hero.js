@@ -7,8 +7,8 @@ const Hero = () => {
             <img src={hero} alt="" />
 
             <h1>
-                Unlimited Data <br/>
-                Unlimited Entertainment
+                Unlimited Data <span className="line"></span><br/>
+                Unlimited Entertainment <span className="line1"></span>
             </h1>
         </div>
     )

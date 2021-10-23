@@ -1,6 +1,11 @@
 import React from "react";
 
 const Form = () => {
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+  }
+  
   return (
     <div className="form-container">
       <div className="circle">{/* grey */}</div>
@@ -19,7 +24,7 @@ const Form = () => {
           className="input2"
         />
 
-        <button>Recharge</button>
+        <button onClick={submitHandler}>Recharge</button>
       </form>
     </div>
   );

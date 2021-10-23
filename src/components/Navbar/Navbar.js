@@ -1,22 +1,38 @@
-import React from "react";
+import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
 
 const Navbar = () => {
   const history = useHistory();
+  const [right, setRight] = useState("-100%");
+
+  const menuHandler = (e) => {
+    if(right === "-100%") {
+      setRight("0%");
+    } else {
+      setRight("-100%");
+    }
+  };
 
   return (
     <div className="navbar-parent">
       <div className="navbar-inner">
-        <h1 className="logo">Broadband</h1>
+        <h1 className="logo" onClick={() => history.push("/")} style={{cursor : "pointer"}}>Broadband</h1>
 
-        {/* <i class="fa fa-bars" aria-hidden="true"></i> */}
+        <i
+          class="fa fa-bars menu-bar"
+          aria-hidden="true"
+          onClick={(e) => menuHandler(e)}
+          
+        ></i>
 
-        <ul className="menu ul">
+        <ul className="menu ul" style={{ right: right}}>
           <li onClick={() => history.push("/")}>Home</li>
           <li>
-            <p class="desktop-item">About Us</p>
+            <p class="desktop-item">
+              About Us <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </p>
 
-            <ul class="dropd-menu">
+            <ul class="dropd-menu" >
               <li onClick={() => history.push("/about")}>About Company</li>
               <li onClick={() => history.push("/leadership")}>Leadership</li>
               <li onClick={() => history.push("/hinduja")}>Hinduja Group</li>
