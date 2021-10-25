@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import search from "../../images/airtel-unlimited-talk.webp";
+import InnerChart from "./InnerChart";
+import InnerChart1 from "./InnerChart1";
+import InnerChart2 from "./InnerChart2";
 
 const Chart = () => {
   const [value, setValue] = useState("");
@@ -12,9 +15,13 @@ const Chart = () => {
 
   const changeHandler = (e) => {
     document.getElementById("a").style.background = "white";
+    document.getElementById("a").style.color = "black";
     document.getElementById("b").style.background = "white";
+    document.getElementById("b").style.color = "black";
     document.getElementById("c").style.background = "#fff";
+    document.getElementById("c").style.color = "#000";
     e.target.style.background = "#ff4d00";
+    e.target.style.color = "#fff";
     setText(e.target.innerText);
   };
 
@@ -41,17 +48,25 @@ const Chart = () => {
       </div>
 
       <div className="box2">
-        <span className="dot1"></span>
-        <span className="dot2"></span>
-        <span className="dot3"></span>
-        <span className="linex"></span>
-        <span className="linex1"></span>
-        <span className="linex2"></span>
-        <span className="linex3"></span>
-        <span className="liney"></span>
+        {value === "Download HD video 2GB" ? (
+          <InnerChart1 />
+        ) : value === "Download 4k movie 5GB" ? (
+          <InnerChart2 />
+        ) : (
+          <InnerChart />
+        )}
       </div>
     </div>
   );
 };
 
 export default Chart;
+
+// <span className="dot1"></span>
+// <span className="dot2"></span>
+// <span className="dot3"></span>
+// <span className="linex"></span>
+// <span className="linex1"></span>
+// <span className="linex2"></span>
+// <span className="linex3"></span>
+// <span className="liney"></span>
