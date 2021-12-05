@@ -11,9 +11,9 @@ const InnerChart1 = () => {
       <span className="linex2"></span>
       <span className="linex3"></span>
       <span className="liney"></span>
-      <p>1 Gbps</p>
-      <p>100 Mbps</p>
-      <p>50 Mbps</p>
+      <p class="speed">1 Gbps</p>
+      <p class="speed">100 Mbps</p>
+      <p class="speed">50 Mbps</p>
     </div>
   );
 };

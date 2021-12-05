@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { useHistory } from "react-router-dom";
+import logo from "../../img2/logo-br.jpeg"
 
 const Navbar = () => {
   const history = useHistory();
@@ -16,7 +17,8 @@ const Navbar = () => {
   return (
     <div className="navbar-parent">
       <div className="navbar-inner">
-        <h1 className="logo" onClick={() => history.push("/")} style={{cursor : "pointer"}}>Broadband</h1>
+        {/* <h1 className="logo" onClick={() => history.push("/")} style={{cursor : "pointer"}}>Broadband</h1> */}
+         <img className="logo" src={logo} alt="logo" />
 
         <i
           class="fa fa-bars menu-bar"

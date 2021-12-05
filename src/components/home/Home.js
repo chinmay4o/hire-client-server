@@ -5,7 +5,7 @@ import Plans from "./Plans"
 import Best from "./Best"
 import Search from "./Search"
 import Map from "./Map"
-import Experience from "./Experience"
+import Features1 from "./Features1"
 import Chat from "../Chat"
 import Chart from "./Chart"
 import Footer from "./Footer"
@@ -18,7 +18,7 @@ const Home = () => {
                 <Form />
                 <Plans />
                 <Best />
-                <Experience />
+                <Features1 />
                 <Chart />
                 <Search />
                 <Map />

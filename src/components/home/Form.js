@@ -11,7 +11,7 @@ const Form = () => {
       <div className="circle">{/* grey */}</div>
 
       <h2>
-        Recharge and pay bills{" "}
+        Recharge <br />and pay bills{" "}
         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
       </h2>
 

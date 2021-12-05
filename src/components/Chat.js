@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import whatsapp from "../img2/whatsapp.png"
 
 const Chat = () => {
   const [chat, setChat] = useState(false);
@@ -12,7 +13,7 @@ const Chat = () => {
 
   return (
     <div className="chat-box" onClick={() => setChat(!chat)}>
-      {chat ? (
+      {/* {chat ? (
         <div className="chat-section">
           <p className="que">Rate your experience</p>
 
@@ -22,8 +23,11 @@ const Chat = () => {
             <p className="ans">Needs to improve</p>
           </div>
         </div>
-      ) : null}
-      <i class="fa fa-comments chat-btn" aria-hidden="true"></i>
+      ) : null} */}
+      {/* <i class="fa fa-comments chat-btn" aria-hidden="true"></i> */}
+      <a href="https://wa.me/8237170617" target="_blank" rel="noopener noreferrer">
+      <img src={whatsapp} alt="whatsapp" class="chat-btn" />
+      </a>
     </div>
   );
 };

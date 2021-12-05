@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css'
 import "./scss/style.css"
 import "./components/about/scss/aboutstyle.css";

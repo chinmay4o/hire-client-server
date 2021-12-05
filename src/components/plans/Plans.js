@@ -16,7 +16,7 @@ const Plans = () => {
             <div className="wifi-head">
               <div className="head">Name</div>
 
-              <div className="head">Data</div>
+              <div className="head">Data Speed</div>
 
               <div className="head">Validity</div>
 
@@ -29,7 +29,7 @@ const Plans = () => {
                 <div className="each-plan" key={ele.id}>
                   <div className="name">{ele.price}</div>
 
-                  <div className="data">{ele.data} /day</div>
+                  <div className="data">{ele.data}</div>
 
                   <div className="validity">{ele.validity}</div>
 

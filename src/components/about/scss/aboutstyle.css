@@ -46,7 +46,7 @@
 }
 
 .about-info h2 {
-  color: #ff5900;
+  color: #0cbaf9;
   font-size: 3rem;
   text-align: left;
 }
@@ -72,7 +72,7 @@
 .about-values h2 {
   font-size: 5rem;
   font-weight: bold;
-  color: #ff5900;
+  color: #0cbaf9;
 }
 
 .about-values h2 span {
@@ -247,7 +247,7 @@
 }
 
 .wifi-container .sidebar {
-  background-color: #ff5900;
+  background-color: #0cbaf9;
   color: #fff;
   font-weight: bold;
   display: -ms-grid;
@@ -302,7 +302,7 @@
 .wifi-container .wifi-main .each-plan .buy {
   width: 150px;
   height: 40px;
-  background-color: #ff5900;
+  background-color: #0cbaf9;
   color: #fff;
   border: none;
   font-family: montserrat;
@@ -313,7 +313,7 @@
 
 .wifi-container .wifi-main .each-plan .buy:hover {
   background-color: #fff;
-  border: 3px solid #ff5900;
+  border: 3px solid #0cbaf9;
   color: #000;
 }
 
@@ -696,7 +696,7 @@
         grid-template-columns: 1fr;
   }
   .wifi-container .sidebar {
-    background-color: #ff5900;
+    background-color: #0cbaf9;
     color: #fff;
     font-weight: bold;
     display: -ms-grid;
@@ -744,7 +744,7 @@
   .wifi-container .wifi-main .each-plan .buy {
     width: 150px;
     height: 40px;
-    background-color: #ff5900;
+    background-color: #0cbaf9;
     color: #fff;
     border: none;
     font-family: montserrat;
@@ -754,7 +754,7 @@
   }
   .wifi-container .wifi-main .each-plan .buy:hover {
     background-color: #fff;
-    border: 3px solid #ff5900;
+    border: 3px solid #0cbaf9;
     color: #000;
   }
   /* ============ parent ============= */

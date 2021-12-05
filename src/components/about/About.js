@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../../images/he1.png";
+import about from "../../img2/about us.png"
 import Map from "../home/Map";
 import Footer from "../home/Footer";
 import ContactWidget from "../contact/ContactWidget"
@@ -9,9 +10,9 @@ const About = () => {
     <div className="parent">
       <div className="layout-container">
         <div className="about-container">
-          <img src={hero} alt="" />
+          <img src={about} alt="" />
 
-          <h1>About Us</h1>
+          {/* <h1>About Us</h1> */}
         </div>
 
         <div className="about-info">

@@ -41,6 +41,7 @@ body {
 /* ============ Nav container ============ */
 .navbar-parent {
   width: 100vw;
+  overflow-x: hidden;
   height: 80px;
   background-color: transparent;
   display: -webkit-box;
@@ -63,6 +64,7 @@ body {
 .navbar-parent .navbar-inner {
   max-width: 1440px;
   width: 100vw;
+  overflow-x: hidden;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,8 +81,8 @@ body {
 }
 
 .navbar-parent .navbar-inner .logo {
-  font-size: 2.5rem;
-  color: #000;
+  width: 100px;
+  height: 80px;
 }
 
 .navbar-parent .navbar-inner #click {
@@ -128,7 +130,7 @@ body {
 }
 
 .navbar-parent .navbar-inner .ul li:hover {
-  background-color: #ff5900;
+  background-color: #0cbaf9;
   color: #fff;
 }
 
@@ -308,12 +310,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.653);
 }
 
 .hero-container img {
   width: 100%;
-  height: 300px;
+  height: 100%;
   margin: auto 0;
 }
 
@@ -354,6 +355,7 @@ body {
   padding: 100px 50px;
   position: relative;
   background-color: #ff5900;
+  background-color: #0cbaf9;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.7fr 1fr;
@@ -366,7 +368,8 @@ body {
   height: 471px;
   width: 613px;
   border-radius: 50%;
-  background-color: grey;
+  background-color: #0CBAF9;
+  background-color: #fff;
   top: -64%;
   left: -1%;
   z-index: 1;
@@ -377,15 +380,17 @@ body {
   -ms-grid-column: 1;
   grid-area: form-box1;
   z-index: 2;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.8rem;
+  font-weight: 600;
   color: #fff;
-  margin-top: -48px;
-  margin-left: 30px;
+  color: #032147;
+  margin-top: -40px;
+  margin-left: 80px;
   position: relative;
 }
 
 .form-container h2 .fa {
+  display: none;
   font-size: 5rem;
   left: 130px;
   top: 24%;
@@ -446,6 +451,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   outline: none;
+  border-radius: 3px;
 }
 
 .form-container form .input2 {
@@ -466,10 +472,11 @@ body {
   font-size: 1.2rem;
   padding: 0.6rem;
   margin: 14px auto 0 auto;
-  color: #000;
+  color: #032147;
   font-weight: 600;
   font-family: montserrat;
   cursor: pointer;
+  border-radius: 3px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -502,7 +509,6 @@ body {
 .plans-container .btn-plans {
   font-family: Montserrat;
   border: none;
-  background-color: #ff5900;
   background-color: #000;
   font-size: 1rem;
   font-weight: 600;
@@ -540,7 +546,11 @@ body {
   width: 350px;
   height: 550px;
   background-color: #ff5900;
+  background-color: #0cbaf9;
   color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border-radius: 3px;
 }
 
 .plans-container .plans .first h1,
@@ -594,14 +604,12 @@ body {
   width: 70%;
   font-family: Montserrat;
   border: none;
-  background-color: #424242;
-  background-color: #000;
   background-color: #fff;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #000;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0c0c5e;
   padding: 10px 25px;
-  border-radius: 0px;
+  border-radius: 4px;
   margin: 20px auto 0 auto;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
@@ -615,6 +623,15 @@ body {
           box-shadow: 0px 0px 5px 4px rgba(2, 2, 2, 0.461);
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+}
+
+.plans-container .plans .first:hover,
+.plans-container .plans .second:hover,
+.plans-container .plans .third:hover {
+  -webkit-box-shadow: 0px 0px 5px 4px rgba(41, 169, 255, 0.363);
+          box-shadow: 0px 0px 5px 4px rgba(41, 169, 255, 0.363);
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .plans-container .plans .first {
@@ -641,6 +658,7 @@ body {
   height: 700px;
   padding: 100px 50px;
   background-color: grey;
+  background-color: #0c0c5e;
   color: #fff;
   display: -ms-grid;
   display: grid;
@@ -660,7 +678,7 @@ body {
   font-size: 3rem;
 }
 
-.best-container .best-box1 p {
+.best-container .best-box1 .dis {
   font-size: 1.6rem;
   margin-top: 30px;
 }
@@ -673,13 +691,45 @@ body {
   grid-gap: 20px;
   width: 90%;
   height: 160px;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .best-container .best-box1 .sec .one,
 .best-container .best-box1 .sec .two,
 .best-container .best-box1 .sec .three {
-  background-color: #ff5900;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  height: 85%;
+  background-color: #0cbaf9;
+}
+
+.best-container .best-box1 .sec .one .c,
+.best-container .best-box1 .sec .two .c,
+.best-container .best-box1 .sec .three .c {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.best-container .best-box1 .sec .one .a,
+.best-container .best-box1 .sec .two .a,
+.best-container .best-box1 .sec .three .a {
+  font-size: 2.7rem;
+}
+
+.best-container .best-box1 .sec .one .a span,
+.best-container .best-box1 .sec .two .a span,
+.best-container .best-box1 .sec .three .a span {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.best-container .best-box1 .sec .one .b,
+.best-container .best-box1 .sec .two .b,
+.best-container .best-box1 .sec .three .b {
+  font-size: 2.3rem;
+  font-style: italic;
 }
 
 .best-container .best-box2 {
@@ -688,7 +738,12 @@ body {
   grid-area: best-box2;
   display: -ms-grid;
   display: grid;
-  place-content: center;
+  place-items: center;
+}
+
+.best-container .best-box2 img {
+  width: 63%;
+  height: 98%;
 }
 
 /* ============ Experience Container ============ */
@@ -726,7 +781,7 @@ body {
 
 .experience-container .grid .box i {
   display: block;
-  color: #ff5900;
+  color: #0cbaf9;
   text-align: center;
   font-size: 5rem;
 }
@@ -741,7 +796,7 @@ body {
   width: 100%;
   height: 500px;
   padding: 100px 50px;
-  background-color: #161b31;
+  background-color: #0c0c5e;
   color: #fff;
   display: -ms-grid;
   display: grid;
@@ -770,7 +825,8 @@ body {
   font-family: Montserrat;
   border: none;
   font-weight: 600;
-  color: #161b31;
+  color: #fff;
+  background-color: #0cbaf9;
   padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
@@ -841,9 +897,9 @@ body {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  background-color: #3b4052;
-  height: 100px;
-  width: 100px;
+  background-color: #0cbaf9;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   display: -ms-grid;
   display: grid;
@@ -853,8 +909,8 @@ body {
 }
 
 .chat-box .chat-btn {
-  font-size: 2rem;
-  color: #fff;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
 }
 
@@ -1512,7 +1568,7 @@ body {
 .footer-container {
   width: 100%;
   height: 537px;
-  background-color: #ff5900;
+  background-color: #0cbaf9;
   padding: 79px 50px;
   display: -ms-grid;
   display: grid;
@@ -1610,7 +1666,7 @@ body {
 .widget-container {
   width: 100%;
   height: 284px;
-  background-color: #ff5900;
+  background-color: #0cbaf9;
   padding: 40px 50px;
   display: -ms-grid;
   display: grid;
@@ -2362,6 +2418,567 @@ body {
   .footer-container .footer3 .footer-form button:hover {
     -webkit-box-shadow: 0px 0px 5px 4px #e6e6e6;
             box-shadow: 0px 0px 5px 4px #e6e6e6;
+  }
+}
+
+@media (max-width: 678px) {
+  /* ============ chart container ============= */
+  .chart-container {
+    width: 100%;
+    height: 700px;
+    padding: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    background-color: #e8e8e8;
+  }
+  .chart-container .box1 {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
+  }
+  .chart-container .box1 h3 {
+    margin-bottom: 40px;
+  }
+  .chart-container .box1 p {
+    cursor: pointer;
+    border: 2px solid #ff5900;
+    padding: 10px;
+    text-align: center;
+  }
+  .chart-container .box1 .ans {
+    font-size: .8rem;
+    color: #000;
+    font-weight: 600;
+  }
+  .chart-container .box1 button {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+  }
+  /* ============ innerChart container ============ */
+  .innerChart-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .innerChart-container .linex {
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    border-radius: 3px;
+    height: 200px;
+    background-color: #000;
+    -webkit-transform: translate(158px, 66px);
+            transform: translate(158px, 66px);
+  }
+  .innerChart-container .linex1 {
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    border-radius: 3px;
+    height: 200px;
+    background-color: #ff6320;
+    -webkit-transform: translate(223px, 66px);
+            transform: translate(223px, 66px);
+  }
+  .innerChart-container .linex2 {
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    border-radius: 3px;
+    height: 200px;
+    background-color: #d026ff;
+    -webkit-transform: translate(298px, 66px);
+            transform: translate(298px, 66px);
+  }
+  .innerChart-container .linex3 {
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    border-radius: 3px;
+    height: 200px;
+    background-color: #29adff;
+    -webkit-transform: translate(375px, 66px);
+            transform: translate(375px, 66px);
+  }
+  .innerChart-container .dot1 {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: #ff6320;
+    -webkit-transform: translate(213px, 294px);
+            transform: translate(213px, 294px);
+    -webkit-animation: move1 1s alternate ease-in-out infinite;
+            animation: move1 1s alternate ease-in-out infinite;
+  }
+  .innerChart-container .dot2 {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    border-radius: 5px;
+    height: 10px;
+    background-color: #d026ff;
+    -webkit-transform: translate(288px, 294px);
+            transform: translate(288px, 294px);
+    -webkit-animation: move2 1s alternate ease-in-out infinite;
+            animation: move2 1s alternate ease-in-out infinite;
+  }
+  @-webkit-keyframes move1 {
+    from {
+      -webkit-transform: translate(213px, 294px);
+              transform: translate(213px, 294px);
+    }
+    to {
+      -webkit-transform: translate(213px, 80px);
+              transform: translate(213px, 80px);
+    }
+  }
+  @keyframes move1 {
+    from {
+      -webkit-transform: translate(213px, 294px);
+              transform: translate(213px, 294px);
+    }
+    to {
+      -webkit-transform: translate(213px, 80px);
+              transform: translate(213px, 80px);
+    }
+  }
+  @-webkit-keyframes move2 {
+    from {
+      -webkit-transform: translate(288px, 294px);
+              transform: translate(288px, 294px);
+    }
+    to {
+      -webkit-transform: translate(288px, 80px);
+              transform: translate(288px, 80px);
+    }
+  }
+  @keyframes move2 {
+    from {
+      -webkit-transform: translate(288px, 294px);
+              transform: translate(288px, 294px);
+    }
+    to {
+      -webkit-transform: translate(288px, 80px);
+              transform: translate(288px, 80px);
+    }
+  }
+  @-webkit-keyframes move3 {
+    from {
+      -webkit-transform: translate(365px, 294px);
+              transform: translate(365px, 294px);
+    }
+    to {
+      -webkit-transform: translate(365px, 80px);
+              transform: translate(365px, 80px);
+    }
+  }
+  @keyframes move3 {
+    from {
+      -webkit-transform: translate(365px, 294px);
+              transform: translate(365px, 294px);
+    }
+    to {
+      -webkit-transform: translate(365px, 80px);
+              transform: translate(365px, 80px);
+    }
+  }
+  .innerChart-container .dot3 {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    border-radius: 5px;
+    height: 10px;
+    -webkit-transform: translate(365px, 294px);
+            transform: translate(365px, 294px);
+    background-color: #29adff;
+    -webkit-animation: move3 1s alternate ease-in-out infinite;
+            animation: move3 1s alternate ease-in-out infinite;
+  }
+  .innerChart-container .liney {
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    border-radius: 3px;
+    height: 230px;
+    background-color: #000;
+    -webkit-transform: translate(302px, 184px) rotate(90deg);
+            transform: translate(302px, 184px) rotate(90deg);
+  }
+  /* ============ innerChart1 container ============ */
+  .innerChart1-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .innerChart1-container .linex {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #000;
+    -webkit-transform: translate(158px, 66px);
+            transform: translate(158px, 66px);
+  }
+  .innerChart1-container .linex1 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #ff6320;
+    -webkit-transform: translate(223px, 66px);
+            transform: translate(223px, 66px);
+  }
+  .innerChart1-container .linex2 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #d026ff;
+    -webkit-transform: translate(298px, 66px);
+            transform: translate(298px, 66px);
+  }
+  .innerChart1-container .linex3 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #29adff;
+    -webkit-transform: translate(375px, 66px);
+            transform: translate(375px, 66px);
+  }
+  .innerChart1-container .dot1 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 2px;
+    height: 20px;
+    background-color: #ff6320;
+    -webkit-transform: translate(213px, 80px);
+            transform: translate(213px, 80px);
+    -webkit-animation: move1 2s ease-in-out;
+            animation: move1 2s ease-in-out;
+  }
+  .innerChart1-container .dot2 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 2px;
+    height: 20px;
+    background-color: #d026ff;
+    -webkit-transform: translate(288px, 80px);
+            transform: translate(288px, 80px);
+    -webkit-animation: move2 5s ease-in-out;
+            animation: move2 5s ease-in-out;
+  }
+  @keyframes move1 {
+    from {
+      -webkit-transform: translate(213px, 294px);
+              transform: translate(213px, 294px);
+    }
+    to {
+      -webkit-transform: translate(213px, 80px);
+              transform: translate(213px, 80px);
+    }
+  }
+  @keyframes move2 {
+    from {
+      -webkit-transform: translate(288px, 294px);
+              transform: translate(288px, 294px);
+    }
+    to {
+      -webkit-transform: translate(288px, 80px);
+              transform: translate(288px, 80px);
+    }
+  }
+  @keyframes move3 {
+    from {
+      -webkit-transform: translate(365px, 294px);
+              transform: translate(365px, 294px);
+    }
+    to {
+      -webkit-transform: translate(365px, 80px);
+              transform: translate(365px, 80px);
+    }
+  }
+  .innerChart1-container .dot3 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 2px;
+    height: 20px;
+    -webkit-transform: translate(365px, 80px);
+            transform: translate(365px, 80px);
+    background-color: #29adff;
+    -webkit-animation: move3 10s ease-in-out;
+            animation: move3 10s ease-in-out;
+  }
+  .innerChart1-container .liney {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 300px;
+    background-color: #000;
+    -webkit-transform: translate(302px, 184px) rotate(90deg);
+            transform: translate(302px, 184px) rotate(90deg);
+  }
+  /* ============ innerChart2 container ============ */
+  .innerChart2-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .innerChart2-container .linex {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #000;
+    -webkit-transform: translate(158px, 66px);
+            transform: translate(158px, 66px);
+  }
+  .innerChart2-container .linex1 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #ff6320;
+    -webkit-transform: translate(223px, 66px);
+            transform: translate(223px, 66px);
+  }
+  .innerChart2-container .linex2 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #d026ff;
+    -webkit-transform: translate(298px, 66px);
+            transform: translate(298px, 66px);
+  }
+  .innerChart2-container .linex3 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #29adff;
+    -webkit-transform: translate(375px, 66px);
+            transform: translate(375px, 66px);
+  }
+  .innerChart2-container .dot1 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #ff6320;
+    -webkit-transform: translate(213px, 80px);
+            transform: translate(213px, 80px);
+    -webkit-animation: move1 7s ease-in-out;
+            animation: move1 7s ease-in-out;
+  }
+  .innerChart2-container .dot2 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #d026ff;
+    -webkit-transform: translate(288px, 80px);
+            transform: translate(288px, 80px);
+    -webkit-animation: move2 15s ease-in-out;
+            animation: move2 15s ease-in-out;
+  }
+  @keyframes move1 {
+    from {
+      -webkit-transform: translate(213px, 294px);
+              transform: translate(213px, 294px);
+    }
+    to {
+      -webkit-transform: translate(213px, 80px);
+              transform: translate(213px, 80px);
+    }
+  }
+  @keyframes move2 {
+    from {
+      -webkit-transform: translate(288px, 294px);
+              transform: translate(288px, 294px);
+    }
+    to {
+      -webkit-transform: translate(288px, 80px);
+              transform: translate(288px, 80px);
+    }
+  }
+  @keyframes move3 {
+    from {
+      -webkit-transform: translate(365px, 294px);
+              transform: translate(365px, 294px);
+    }
+    to {
+      -webkit-transform: translate(365px, 80px);
+              transform: translate(365px, 80px);
+    }
+  }
+  .innerChart2-container .dot3 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    -webkit-transform: translate(365px, 80px);
+            transform: translate(365px, 80px);
+    background-color: #29adff;
+    -webkit-animation: move3 35s ease-in-out;
+            animation: move3 35s ease-in-out;
+  }
+  .innerChart2-container .liney {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 300px;
+    background-color: #000;
+    -webkit-transform: translate(302px, 184px) rotate(90deg);
+            transform: translate(302px, 184px) rotate(90deg);
+  }
+  /* ============ innerChart3 container ============ */
+  .innerChart3-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .innerChart3-container .linex {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #000;
+    -webkit-transform: translate(158px, 66px);
+            transform: translate(158px, 66px);
+  }
+  .innerChart3-container .linex1 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #ff6320;
+    -webkit-transform: translate(223px, 66px);
+            transform: translate(223px, 66px);
+  }
+  .innerChart3-container .linex2 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #d026ff;
+    -webkit-transform: translate(298px, 66px);
+            transform: translate(298px, 66px);
+  }
+  .innerChart3-container .linex3 {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 270px;
+    background-color: #29adff;
+    -webkit-transform: translate(375px, 66px);
+            transform: translate(375px, 66px);
+  }
+  .innerChart3-container .dot1 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #ff6320;
+    -webkit-transform: translate(213px, 80px);
+            transform: translate(213px, 80px);
+    -webkit-animation: move1 1s ease-in-out;
+            animation: move1 1s ease-in-out;
+  }
+  .innerChart3-container .dot2 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    background-color: #d026ff;
+    -webkit-transform: translate(288px, 80px);
+            transform: translate(288px, 80px);
+    -webkit-animation: move2 2s ease-in-out;
+            animation: move2 2s ease-in-out;
+  }
+  @keyframes move1 {
+    from {
+      -webkit-transform: translate(213px, 294px);
+              transform: translate(213px, 294px);
+    }
+    to {
+      -webkit-transform: translate(213px, 80px);
+              transform: translate(213px, 80px);
+    }
+  }
+  @keyframes move2 {
+    from {
+      -webkit-transform: translate(288px, 294px);
+              transform: translate(288px, 294px);
+    }
+    to {
+      -webkit-transform: translate(288px, 80px);
+              transform: translate(288px, 80px);
+    }
+  }
+  @keyframes move3 {
+    from {
+      -webkit-transform: translate(365px, 294px);
+              transform: translate(365px, 294px);
+    }
+    to {
+      -webkit-transform: translate(365px, 80px);
+              transform: translate(365px, 80px);
+    }
+  }
+  .innerChart3-container .dot3 {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    border-radius: 5px;
+    height: 20px;
+    -webkit-transform: translate(365px, 80px);
+            transform: translate(365px, 80px);
+    background-color: #29adff;
+    -webkit-animation: move3 3s ease-in-out;
+            animation: move3 3s ease-in-out;
+  }
+  .innerChart3-container .liney {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    border-radius: 3px;
+    height: 300px;
+    background-color: #000;
+    -webkit-transform: translate(302px, 184px) rotate(90deg);
+            transform: translate(302px, 184px) rotate(90deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
