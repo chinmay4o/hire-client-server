@@ -1,0 +1,105 @@
+.newconnection-container {
+  position: fixed;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.543);
+}
+
+.newconnection-container .newconnection-modal {
+  width: 600px;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.newconnection-container .newconnection-modal .close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.newconnection-container .newconnection-modal::-webkit-scrollbar {
+  width: 2px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.newconnection-container .newconnection-modal::-webkit-scrollbar-thumb {
+  background: grey;
+}
+
+.newconnection-container .newconnection-modal .form {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.newconnection-container .newconnection-modal .form h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #0cbaf9;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.newconnection-container .newconnection-modal .form .done {
+  font-size: 3.5rem;
+  color: greenyellow;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.newconnection-container .newconnection-modal .form input {
+  display: block;
+  width: 80%;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid #0cbaf9;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  outline: none;
+  font-family: montserrat;
+}
+
+.newconnection-container .newconnection-modal .form button {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #0cbaf9;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 2px;
+  border: none;
+  font-family: montserrat;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.newconnection-container .newconnection-modal .form button:hover {
+  background-color: #fff;
+  border: 3px solid #0cbaf9;
+  color: #000;
+}
+/*# sourceMappingURL=newcon.css.map */

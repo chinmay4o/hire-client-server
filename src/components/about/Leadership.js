@@ -1,16 +1,18 @@
 import React, { useState } from "react";
-import lead1 from "./images/l2.jpg";
 import ContactWidget from "../contact/ContactWidget";
 import Map from "../home/Map";
 import Footer from "../home/Footer";
 import { Button, Modal } from "react-bootstrap";
 import leaders from "./aboutLeader.js";
+import l1 from "../../img2/leadership/l1.jpg";
+import l2 from "../../img2/leadership/l2.jpg";
+import l3 from "../../img2/leadership/l3.jpg";
+import l4 from "../../img2/leadership/l4.jpg";
 
 const Leadership = () => {
   const [show, setShow] = useState(false);
-  const[info,setInfo] = useState(``);
+  const [info, setInfo] = useState(``);
   const handleShow = (info) => {
-    
     setShow(true);
 
     setInfo(info);
@@ -26,15 +28,22 @@ const Leadership = () => {
             {leaders.map((leader) => {
               return (
                 <div className="each-member" key={leader.id}>
-                  <img src={lead1} alt="" />
+                  <img src={l1} alt="" />
 
                   <h4>{leader.name}</h4>
-                  <p>{leader.work}</p>
+                  <a href={`mailto:${leader.email}`}>
+                    <i
+                      class="fa fa-envelope-o"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
 
-                  <button className="know" onClick={() => handleShow(leader.info)}>
+                  <button
+                    className="know"
+                    onClick={() => handleShow(leader.info)}
+                  >
                     Know More
                   </button>
-                
                 </div>
               );
             })}
@@ -69,5 +78,6 @@ const ModLeader = ({ info, show, setShow }) => {
     </Modal>
   );
 };
+
 
 export default Leadership;

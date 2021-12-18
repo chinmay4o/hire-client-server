@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="navbar-parent">
       <div className="navbar-inner">
         {/* <h1 className="logo" onClick={() => history.push("/")} style={{cursor : "pointer"}}>Broadband</h1> */}
-         <img className="logo" src={logo} alt="logo" />
+         <img className="logo" src={logo} alt="logo" onClick={() => history.push("/")}/>
 
         <i
           class="fa fa-bars menu-bar"
@@ -40,7 +40,7 @@ const Navbar = () => {
               <li onClick={() => history.push("/hinduja")}>Hinduja Group</li>
             </ul>
           </li>
-          <li onClick={() => history.push("/plans")}>Wifi-Plans</li>
+          <li onClick={() => history.push("/plans")}>Broadband-Plans</li>
           <li onClick={() => history.push("/faq")}>FAQ</li>
           <li onClick={() => history.push("/contact")}>Contact Us</li>
         </ul>

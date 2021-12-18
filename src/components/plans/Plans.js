@@ -14,7 +14,7 @@ const Plans = () => {
           <div className="wifi-main">
 
             <div className="wifi-head">
-              <div className="head">Name</div>
+              {/* <div className="head">Name</div> */}
 
               <div className="head">Data Speed</div>
 
@@ -27,7 +27,7 @@ const Plans = () => {
             {data.map((ele, index) => {
               return (
                 <div className="each-plan" key={ele.id}>
-                  <div className="name">{ele.price}</div>
+                  {/* <div className="name">{ele.price}</div> */}
 
                   <div className="data">{ele.data}</div>
 

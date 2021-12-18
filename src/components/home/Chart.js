@@ -20,7 +20,7 @@ const Chart = () => {
     document.getElementById("b").style.color = "black";
     document.getElementById("c").style.background = "#fff";
     document.getElementById("c").style.color = "#000";  
-    e.target.style.background = "#ff4d00";
+    e.target.style.background = "#0cbaf9";
     e.target.style.color = "#fff";
     setText(e.target.innerText);
   };

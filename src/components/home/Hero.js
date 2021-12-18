@@ -1,21 +1,40 @@
-import React from 'react'
-import hero from "../../images/he1.png"
-import ban1 from "../../img2/Banner 1.png"
-import ban2 from "../../img2/Banner 2.png"
-import ban3 from "../../img2/Banner 3.png"
+import React, { useState, useEffect } from "react";
+import ban1 from "../../img3/Banner 1.jpg";
+import ban2 from "../../img3/Banner 2.jpg";
+import ban3 from "../../img3/Banner 3.jpg";
 
 const Hero = () => {
-    return (
-        <div className="hero-container">
-            {/* <img src={hero} alt="" /> */}
-            <img src={ban2} alt="" />
+  const today = new Date();
 
-            {/* <h1>
-                Unlimited Data <span className="line"></span><br/>
-                Unlimited Entertainment <span className="line1"></span>
-            </h1> */}
-        </div>
-    )
-}
+  const [img, setImg] = useState(ban1);
+  const [time, setTime] = useState();
 
-export default Hero
+  useEffect(() => {
+    setTimeout(() => {
+      if (img === ban1) {
+        setImg(ban2);
+      } else if (img === ban2) {
+        setImg(ban3);
+      } else if (img === ban3) {
+        setImg(ban1);
+      }
+
+      setTime(today.getSeconds());
+    }, 5000);
+  });
+
+  return (
+    <div className="hero-container">
+      {/* <img src={hero} alt="" /> */}
+      <img src={img} alt="hero" key={time} />
+
+      {/* <h1>
+        Unlimited Data <span className="line"></span>
+        <br />
+        Unlimited Entertainment <span className="line1"></span>
+      </h1> */}
+    </div>
+  );
+};
+
+export default Hero;

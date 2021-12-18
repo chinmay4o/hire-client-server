@@ -8,7 +8,7 @@ const Chat = () => {
   useEffect(() => {
     setTimeout(() => {
       setChat(!chat);
-    }, 7000);
+    }, 3000);
   }, []);
 
   return (
@@ -25,7 +25,7 @@ const Chat = () => {
         </div>
       ) : null} */}
       {/* <i class="fa fa-comments chat-btn" aria-hidden="true"></i> */}
-      <a href="https://wa.me/8237170617" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/8991000906" target="_blank" rel="noopener noreferrer">
       <img src={whatsapp} alt="whatsapp" class="chat-btn" />
       </a>
     </div>

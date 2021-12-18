@@ -4,7 +4,7 @@ import map from "../../images/map.svg";
 const Map = () => {
   return (
     <div className="map-container">
-      <h1>Our Presence</h1>
+      <h1>Our Location</h1>
       <div className="map">
         <iframe
           width="100%"
@@ -13,7 +13,7 @@ const Map = () => {
           loading="lazy"
           allowfullscreen
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBJYwR3_5u-w4IirV3oPGCvnjh9p7ezHmw
-&q=Space+Needle,Seattle+WA"
+&q=Space+Needle,Mumbai"
         ></iframe>
       </div>
     </div>

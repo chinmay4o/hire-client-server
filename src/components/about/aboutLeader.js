@@ -1,72 +1,44 @@
- const leaders = [
+const leaders = [
   {
-      id: 1,
-    name: "chinmay surve",
+    id: 1,
+    name: "Nagesh Chhabria",
+    img: "../../img2/leadership/l1.jpg",
     work: "officer",
+    email : "",
     info: `four ipsum dolor sit amet consectetur adipisicing elit.
  Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
   enim aut ullam ratione veritatis, error laborum corporis veniam natus.
    Facere, illum mollitia`,
   },
   {
-      id: 2,
-    name: "chinmay surve",
+    id: 2,
+    name: "Dhananjay Mahadik",
     work: "officer",
+    email : "dm@bhima-group.in",
+    img: "../../img2/leadership/l1.jpg",
     info: `five ipsum dolor sit amet consectetur adipisicing elit.
  Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
   enim aut ullam ratione veritatis, error laborum corporis veniam natus.
    Facere, illum mollitia`,
   },
   {
-      id: 3,
-    name: "chinmay surve",
+    id: 3,
+    name: "Harish Gulabani ",
+    img: "../../img2/leadership/l1.jpg",
     work: "officer",
+    email : "harish_gulabani@yahoo.co.in",
     info: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
  Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
   enim aut ullam ratione veritatis, error laborum corporis veniam natus.
    Facere, illum mollitia`,
   },
   {
-      id: 4,
-    name: "chinmay surve",
+    id: 4,
+    name: " Pruthviraj Mahadik",
     work: "officer",
+    email : "pm@bhima-group.in",
+    img: "../../img2/leadership/l1.jpg",
     info: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
- Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
-  enim aut ullam ratione veritatis, error laborum corporis veniam natus.
-   Facere, illum mollitia`,
-  },
-  {
-      id: 5,
-    name: "chinmay surve",
-    work: "officer",
-    info: `three ipsum dolor sit amet consectetur adipisicing elit.
- Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
-  enim aut ullam ratione veritatis, error laborum corporis veniam natus.
-   Facere, illum mollitia`,
-  },
-  {
-      id: 6,
-    name: "chinmay surve",
-    work: "officer",
-    info: `chinmay ipsum dolor sit amet consectetur adipisicing elit.
- Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
-  enim aut ullam ratione veritatis, error laborum corporis veniam natus.
-   Facere, illum mollitia`,
-  },
-  {
-      id: 7,
-    name: "chinmay surve",
-    work: "officer",
-    info: `one ipsum dolor sit amet consectetur adipisicing elit.
- Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
-  enim aut ullam ratione veritatis, error laborum corporis veniam natus.
-   Facere, illum mollitia`,
-  },
-  {
-      id: 8,
-    name: "chinmay surve",
-    work: "officer",
-    info: `two ipsum dolor sit amet consectetur adipisicing elit.
  Consequuntur sapiente, eligendi architecto animi, est et dolorem ipsum
   enim aut ullam ratione veritatis, error laborum corporis veniam natus.
    Facere, illum mollitia`,
